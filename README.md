@@ -1,0 +1,4 @@
+# Sleep-Spindle Simulations
+This repository contains the notebooks and scripts for simulating sleep spindles. It has separate simulations for isolated thalamocortical (TC) neurons, isolated thalamic reticular nucleus (TRN) neurons, and connected TC-TRN circuits. The simulations are based on Hodgkin-Huxley equations. Thus, gating variables are defined in `gating_variables.py`. `init_regimes.py` has initialization functions, for example setting different values for conductances.   
+Each notebook is organized into sections that address a scientific question, such as the role of an intrinsic current in burst generation in TC neuron and so on. 
+Some  results were also presented at Bernstein Conference, Berlin, 2022. Cellular and network-level mechanisms underlying the initiation and heterogeneity of thalamic spindles. doi: 10.12751/nncn.bc2022.171
