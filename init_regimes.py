@@ -38,13 +38,13 @@ def init_isolated_TRN(T, regime_name,k):
         I_bg=0
 
     elif regime_name=="test leaky":
-        g_L_TRN_list= list([0.01, 0.03, 0.05, 0.06, 0.09, 0.1])
+        g_L_TRN_list= [0.01, 0.03, 0.05, 0.06, 0.09, 0.1]
         g_L_TRN = g_L_TRN_list[k]
         I_bg=0
         # g_L_TRN= g_L_TRN_list[k]
 
     elif regime_name == "test gT":
-        g_T_TRN_list= list([1, 1.5, 1.75, 2, 2.5, 2.75, 3])
+        g_T_TRN_list= [1, 1.5, 1.75, 2, 2.5, 2.75, 3]
         g_T_TRN = g_T_TRN_list[k]
         g_L_TRN= 0.09
         I_bg=0
@@ -69,7 +69,12 @@ def init_isolated_TRN(T, regime_name,k):
         I_bg= 0
         g_K_TRN = 0
 
-
+    elif regime_name == "gK=gNa=0":
+        g_L_TRN= 0.09
+        g_T_TRN = 3
+        I_bg= 0
+        g_K_TRN = 0
+        g_Na_TRN = 0
 
         
 
